@@ -1,0 +1,26 @@
+.main-content{
+    border: 1px solid #888888;
+    margin: 10px;
+    border-radius: 5px;
+    padding: 20px 10px;
+}
+.card{
+    display: inline-block;
+    box-sizing: border-box;
+    width: 33%;
+    box-shadow: 2px 2px 4px #eee;
+    padding: 20px;
+}
+.card-title{
+    font-size: 30px;
+    padding: 0px 0px 30px;
+    text-transform: uppercase;
+}
+.cta{
+    text-decoration: none;
+    color: #ffffff;
+    background: #00b3ca;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: 600;
+}
