@@ -1,21 +1,27 @@
 import React, { Component } from 'react';
 import './App.css';
-import Content from './Content'
-import coverImage from './images/cover.jpg'
+import Home from './Home'
+import About from './About'
+import FunFacts from './FunFacts'
+import Contact from './Contact'
+import Games from './Games'
+import Navigation from './Navigation';
+import { Router, Route, Link, IndexRoute } from 'react-router'
+import { BrowserRouter } from 'react-router-dom'
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <h1 className="App-title">Space</h1>
-          <h3 className="App-sub-title">Explorer</h3>
-        </header>
-        <p className="App-intro">
-          Get to know some interesting facts and explore space like never before!
-        </p>
-        <Content />
-      </div>
+      <BrowserRouter>
+      <div>
+        <Navigation />
+        <Route exact path='/' component={Home} />
+        <Route path='/about' component={About} />
+        <Route path='/fun-facts' component={FunFacts} />
+        <Route path='/contact' component={Contact} />
+        <Route path='/games' component={Games} />
+        </div>
+      </BrowserRouter>
     );
   }
 }
