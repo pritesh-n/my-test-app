@@ -48,9 +48,8 @@ body{
 }
 
 .nav-wrapper{
-  width:100%;
-  position: absolute;
-  z-index: 1;
+  display: block;
+  width: 100%;
 }
 .nav-wrapper .nav{
   display: block;

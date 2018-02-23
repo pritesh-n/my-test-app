@@ -7,6 +7,8 @@ class Content extends Component {
     return (
       <div className="main-content">
         <Card title="milky way" link="https://www.space.com/19915-milky-way-galaxy.html"/>
+        {/* <Card title="Black Holes" link="https://www.space.com/19915-milky-way-galaxy.html"/>
+        <Card title="Neutron Stars" link="https://www.space.com/19915-milky-way-galaxy.html"/> */}
       </div>
     );
   }

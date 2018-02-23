@@ -39,6 +39,9 @@ describe("Card", () => {
   it("has title milky way", () => {
     const myCard = content().find(Card);
     expect(myCard.props().title).toBe(props.title);
+    // const myCard = content().find(Card).forEach((node) => {
+    // expect(node.props().title).toBe(props.title);
+    // });
   });
 
 });
